@@ -100,7 +100,7 @@ nav ul li a:hover {
 }
 
 /* Skills Section */
-#skills {
+.skills {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,7 +108,7 @@ nav ul li a:hover {
 }
 
 /* Referens Section */
-#referens {
+.referens {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,7 +116,7 @@ nav ul li a:hover {
 }
 
 /* Contact Section */
-#contact {
+.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
