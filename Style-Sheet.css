@@ -83,6 +83,7 @@ nav ul li a:hover {
 .about-image {
   flex: 1;
   text-align: center;
+  padding-left: 30px;
 }
 .about-image img {
   max-width: 100%;
