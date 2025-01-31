@@ -2,7 +2,7 @@
 
 * {
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    outline: 1px solid red;  /* Visar ramar för alla element */
+    /*outline: 1px solid red;  /* Visar ramar för alla element */
 }
 
 html, body {
@@ -70,6 +70,16 @@ nav ul li a:hover {
     max-width: 800px;
     text-align: center;
 }
+.social-media-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25rem;
+    padding-top: 1em;
+    
+    
+}
+
 
 /* Portfolio Section */
 .portfolio-container {
