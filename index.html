@@ -3,19 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link rel="stylesheet" href="ResetSheet.css" />
-    <link rel="stylesheet" href="Style-Sheet.css" />
+    <link rel="stylesheet" href="css/resetsheet.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link href="./src/output.css" rel="stylesheet" />
     <title>Tova Webportfolio</title>
   </head>
   <body>
     <!-- Navigation start-->
     <nav>
       <ul>
-        <li>
-          <a href="#index"> <i class="fa-light fa-house"></i>Home</a>
-        </li>
+        <li><a href="#index">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -130,12 +127,17 @@
                   <img src="Images/placeholder.png" alt="placeholder" />
                 </div>
                 <div class="project-info">
-                  <h3>Project Name 1</h3>
+                  <h3>Hotel booking app</h3>
                   <p>
                     Description of project 1. Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit.
                   </p>
-                  <a href="#" target="_blank">View Project</a>
+                  <button
+                    class="button-project"
+                    onclick="location.href='https://github.com/tovdal/HotelBooking';"
+                  >
+                    Github
+                  </button>
                 </div>
               </li>
               <li class="project-box">
