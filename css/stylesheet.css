@@ -130,6 +130,9 @@ nav ul li a:hover {
 .project-info {
   text-align: center;
 }
+.portfolio h3 {
+  font-size: 2em;
+}
 
 /* Skills Section */
 .skills {
