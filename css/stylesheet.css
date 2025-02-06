@@ -15,6 +15,11 @@ body {
 
 body {
   font-family: "Quicksand", serif;
+  background-color: #f7bebe;
+  background-image: url("../Images/star-ocacity-5.svg");
+  background-size: 350px 171px;
+  background-repeat: repeat;
+  background-blend-mode: multiply;
 }
 
 header h1 {
