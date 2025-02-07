@@ -16,8 +16,24 @@ function fetchWeatherData() {
     .then((data) => {
       const temperature = Math.round(data.main.temp);
       const location = data.name;
+      const weatherCondition = data.weather[0].main;
 
-      weatherInfo.innerHTML = `${location}: ${temperature}°C.`;
+      let weatherIcon = "";
+      if (weatherCondition === "Clear") {
+        weatherIcon = "☀️";
+      } else if (weatherCondition === "Clouds") {
+        weatherIcon = "☁️";
+      } else if (weatherCondition === "Rain") {
+        weatherIcon = "🌧️";
+      } else if (weatherCondition === "Snow") {
+        weatherIcon = "❄️";
+      } else if (weatherCondition === "Thunderstorm") {
+        weatherIcon = "⛈️";
+      } else {
+        weatherIcon = "🌫️";
+      }
+
+      weatherInfo.innerHTML = `${weatherIcon} ${location}: ${temperature}°C.`;
     })
     .catch((error) => {
       console.error("Det gick inte att hämta väderdata:", error);
