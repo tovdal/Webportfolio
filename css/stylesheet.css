@@ -25,7 +25,7 @@ body {
 body {
   font-family: "Quicksand", serif;
   background-color: #f7bebe;
-  background-image: url("../Images/star-ocacity-5.svg");
+  background-image: url("../Images/star-ocacity-50.svg");
   background-size: 350px 171px;
   background-repeat: repeat;
   background-blend-mode: multiply;
@@ -51,7 +51,10 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 18px 8%;
-  background-color: #fff;
+  background-color: white;
+  border-radius: 20px; /* Try different values */
+  width: 90%;
+  margin: 0 auto;
 }
 nav ul {
   list-style: none;
@@ -209,5 +212,5 @@ footer {
   background-color: white;
   border-radius: 20px; /* Try different values */
   width: 200px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
