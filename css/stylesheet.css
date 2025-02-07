@@ -145,7 +145,7 @@ nav ul li a:hover {
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #e8e8e8;
+  background-color: white;
 }
 .project-info {
   text-align: center;
@@ -198,6 +198,7 @@ footer {
   border: 1px solid #e8e8e8;
   transition: all 0.3s;
   box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  margin: 10px;
 }
 
 .button-project:active {
