@@ -246,10 +246,38 @@
         <!-- Referens end-->
 
         <!-- Contact start-->
-        <section id="contact" class="contact">
-          <h2>Contact</h2>
-          <p>Here you can contact me</p>
-        </section>
+        <div class="contact-container">
+          <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Here you can contact me</p>
+            <form
+              action="https://http-echo-server.azurewebsites.net"
+              method="post"
+            >
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                /><br />
+                <label for="message">Message:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea
+                ><br />
+              </div>
+              <button class="btn-primary rounded-0" type="submit">
+                Send Message
+              </button>
+            </form>
+          </section>
+        </div>
         <!-- Contact end-->
       </main>
       <!-- Main end-->
