@@ -213,6 +213,84 @@ footer {
   margin-top: 40px;
 }
 
+/* Contact Form Styling */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25em;
+  padding: 50px 0px;
+  margin: 30px auto; /* Center the container */
+  width: 70%; /* Set a specific width */
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+}
+
+.contact {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--caf-noir);
+  margin-bottom: 30px;
+}
+
+/* Form Group Styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1em;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--sage);
+  outline: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.btn-primary:active {
+  background-color: var(--primary-color-darker);
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
   nav {
