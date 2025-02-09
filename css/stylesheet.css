@@ -6,12 +6,17 @@
 }
 
 :root {
-  --primary-color: #f7bebe;
-  --secondary-color: #ffefef;
-  --text-color: black;
-  --hover-color: gray;
+  --primary-color: #ffe4e1; /* Light Pastel Pink */
+  --secondary-color: #fff5f5; /* Very Light Pink */
+  --text-color: #1d3557; /* Dark Blue */
+  --hover-color: #ffb6c1; /* Light Pink */
   --font-family: "Quicksand", serif;
-  --border-radius: 50px;
+  --border-radius: 20px;
+  --primary-color-dark: #ffb6c1; /* Light Pink */
+  --primary-color-darker: #ff9999; /* Even Darker Pink */
+  --caf-noir: #1d3557; /* Dark Blue */
+  --text-dark: #1d3557; /* Dark Blue */
+  --sage: #8abf8a; /* Soft Green */
 }
 
 html,
@@ -169,15 +174,6 @@ nav ul li a:hover {
   align-items: center;
   padding: 2rem 0;
 }
-
-/* Contact Section */
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem 0;
-}
-
 /* Footer */
 footer {
   text-align: center;
