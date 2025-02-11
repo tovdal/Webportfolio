@@ -214,10 +214,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.25em;
-  padding: 50px 0px;
-  margin: 30px auto; /* Center the container */
-  width: 70%; /* Set a specific width */
+  padding: 50px 0;
+  margin: 30px auto;
+  width: 70%;
   background-color: var(--secondary-color);
   border-radius: 20px;
 }
@@ -229,37 +228,48 @@ footer {
 }
 
 .contact-container h2 {
-  text-align: center;
   font-size: 2rem;
-  color: var(--caf-noir);
-  margin-bottom: 30px;
+  color: var(--text-dark);
+  margin-bottom: px;
+}
+.contact-container p {
+  color: var(--text-dark);
+  margin-bottom: 20px;
 }
 
 /* Form Group Styling */
 .form-group {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5em;
-  width: 100%;
-  max-width: 500px;
+  flex-wrap: wrap;
+  gap: 2em;
+  max-width: 800px;
   margin: 0 auto;
+}
+.form-group-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  flex: 1 1 calc(50% - 20px);
 }
 
 .form-group label {
   font-size: 1rem;
   color: var(--text-dark);
-  margin-bottom: 5px;
+  width: 100%;
 }
 
 .form-group input,
 .form-group textarea {
-  width: 100%;
   padding: 1em;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-group textarea {
+  flex: 1 1 100%;
 }
 
 .form-group input:focus,
@@ -268,8 +278,9 @@ footer {
   outline: none;
 }
 
+/* Button Styling */
 .btn-primary {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-dark);
   color: white;
   padding: 0.75em 1.5em;
   font-size: 1rem;
@@ -277,14 +288,23 @@ footer {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 1.5em;
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-color-dark);
+  background-color: var(--primary-color);
 }
 
 .btn-primary:active {
   background-color: var(--primary-color-darker);
+}
+
+/* Thank You Message Styling */
+#thank-you-message {
+  display: none;
+  margin-top: 20px;
+  font-size: 2rem;
+  color: var(--text-dark);
 }
 
 /* Media Queries for Responsiveness */
@@ -296,44 +316,27 @@ footer {
   nav ul li a {
     font-size: 16px;
   }
-  .contentHeader {
-    margin-left: 7%;
-    color: var(--text-light);
-  }
-  .header h1 {
-    font-size: 4rem;
-  }
-  .header p {
-    font-size: 1.25rem;
-  }
   .project-box {
-    flex: 1 1 calc(50% - 20px);
-    max-width: calc(50% - 20px);
+    flex: 1 1 calc(70% - 20px);
+    max-width: calc(70% - 20px);
+  }
+  .contact-container {
+    width: 95%;
+    padding: 30px 15px;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    flex: 1 1 100%;
   }
 }
 
-@media (max-width: 900px) {
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  nav ul li a {
-    font-size: 14px;
-  }
-  .contentHeader {
-    margin-top: 0;
-    color: var(--text-light);
-  }
-  .header {
-    text-align: center;
-    height: 50vh;
-  }
-  .header h1 {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 600px) {
+/* Small screens, mobile devices (max-width: 600px) */
+@media (max-width: 768px) {
   nav ul li a {
     font-size: 12px;
   }
@@ -343,5 +346,37 @@ footer {
   }
   .header h1 {
     font-size: 2rem;
+  }
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-image {
+    padding: 1rem;
+  }
+  .about-text-block {
+    padding: 1rem;
+  }
+  .about h2 {
+    font-size: 1.5rem;
+    align-items: center;
+  }
+  .project-box {
+    flex: 1 1 calc(70% - 20px);
+    max-width: calc(70% - 20px);
+  }
+  .contact-container {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
   }
 }
