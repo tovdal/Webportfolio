@@ -288,7 +288,10 @@
                     name="email"
                     autocomplete="email"
                     required
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    title="Please enter a valid email address."
                   />
+                  <!--https://stackoverflow.com/questions/37936138/html-validation-for-phone-numbers/37936191-->
                 </div>
                 <div class="form-group-column">
                   <label for="phone">Phone Number:</label>
@@ -297,6 +300,9 @@
                     id="phone"
                     name="phone"
                     autocomplete="tel"
+                    required
+                    pattern="^\+?[0-9\s\-]{7,15}$"
+                    title="Please enter a valid phone number (e.g., +123456789)."
                   />
                 </div>
                 <label for="message">Message:</label>
