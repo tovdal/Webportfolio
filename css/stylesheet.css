@@ -58,7 +58,7 @@ nav {
   padding: 18px 8%;
   background-color: white;
   border-radius: 20px;
-  width: 90%;
+  width: 50%;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -82,6 +82,13 @@ nav ul li a {
 nav ul li a:hover {
   color: gray;
 }
+nav img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+nav img:hover {
+  color: var(--primary-color-darker);
+}
 
 /* Container */
 .container {
@@ -101,6 +108,7 @@ nav ul li a:hover {
   padding: 2rem 0;
   background-color: var(--secondary-color);
   border-radius: 50px;
+  margin-bottom: 50px;
 }
 .about-image {
   flex: 1;
@@ -123,6 +131,37 @@ nav ul li a:hover {
   justify-content: center;
   gap: 1.25rem;
   padding-top: 1em;
+}
+
+/* Skills Section */
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: var(--secondary-color);
+  border-radius: 50px;
+  margin-top: 50xp;
+}
+.skills img {
+  display: block; /* Remove default inline-block */
+  width: 100px;
+  height: 100px;
+  margin: 1rem;
+
+  transition: all 0.3s;
+}
+.skills img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  list-style: none;
 }
 
 /* Portfolio Section */
@@ -159,14 +198,6 @@ nav ul li a:hover {
 }
 .portfolio h3 {
   font-size: 2em;
-}
-
-/* Skills Section */
-.skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem 0;
 }
 
 /* Referens Section */
@@ -347,6 +378,10 @@ footer {
   .container {
     width: 95%;
     margin: 0 auto;
+  }
+  nav {
+    width: 100%;
+    padding: 10px;
   }
   nav ul li a {
     font-size: 12px;
