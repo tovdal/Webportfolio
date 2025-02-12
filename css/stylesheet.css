@@ -6,8 +6,8 @@
 }
 
 :root {
-  --primary-color: #e0bab5; /* Light Pastel Pink */
-  --secondary-color: #fff5f5; /* Very Light Pink */
+  --primary-color: #ffd0ca; /* Light Pastel Pink */
+  --secondary-color: #fcf1f1; /* Very Light Pink */
   --text-color: #1d3557; /* Dark Blue */
   --hover-color: #ffb6c1; /* Light Pink */
   --font-family: "Quicksand", serif;
@@ -21,28 +21,18 @@ body {
   margin: 0;
   padding: 0;
   width: 100%; /* Ensure the body does not exceed the viewport width */
-  /* Hadde problem med att det blev ett gap på sidan av sidan, så jag la till detta */
+  font-family: var(--font-family);
+  background-color: #f5eaea;
+  scroll-behavior: smooth;
+}
+a.anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
 }
 
-body {
-  font-family: "Quicksand", serif;
-  background-color: #f1dada;
-  /* background-image: url("../Images/star-ocacity-50.svg");
-  background-size: 350px 171px;
-  background-repeat: repeat;
-  background-blend-mode: multiply; */
-}
-
-header h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-header h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
+/*https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header*/
 
 /* Navigation Styling */
 nav {
@@ -60,6 +50,7 @@ nav {
   overflow: hidden;
   margin-bottom: 5px;
 }
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -67,27 +58,93 @@ nav ul {
   display: flex;
   justify-content: center;
 }
+
 nav ul li {
   display: inline-block;
   margin: 10px 20px;
 }
+
 nav ul li a {
   text-decoration: none;
   color: black;
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   font-weight: 500;
 }
+
 nav ul li a:hover {
   color: gray;
 }
+
 nav img {
   width: 1.2rem;
   height: 1.2rem;
 }
+
 nav img:hover {
   color: var(--primary-color-darker);
   transform: scale(1.1);
   transition: all 0.3s;
+}
+
+/* Header Styling */
+.hero {
+  background: var(--primary-color);
+  color: white;
+  padding-bottom: 1rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cta-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--primary-color-darker);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05);
+}
+
+/* Divider header*/
+.header-divider {
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.header-divider svg {
+  position: relative;
+  display: block;
+  width: calc(120% + 1.3px);
+  height: 157px;
+  transform: rotateY(180deg);
+}
+
+.shape-fill {
+  fill: var(--primary-color);
 }
 
 /* Container */
@@ -101,17 +158,17 @@ nav img:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 3rem 2rem; /* Mer luft runt om */
+  padding: 3rem 2rem;
   background-color: var(--secondary-color);
-  border-radius: 25px; /* Mjukare hörn */
+  border-radius: 25px;
   margin-bottom: 50px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Lätt skugga för djup */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .about h2 {
-  font-size: 2rem; /* Större rubrik */
+  font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: #333; /* För att få rubriken mer framträdande */
+  color: #333;
 }
 
 .about-image {
@@ -124,19 +181,19 @@ nav img:hover {
   max-width: 100%;
   height: auto;
   border-radius: 50%;
-  border: 4px solid var(--primary-color); /* Tunn ram runt bilden */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Lätt skugga för att göra bilden mer framträdande */
+  border: 4px solid var(--primary-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .about-text-block {
   flex: 2;
-  max-width: 750px; /* Lite smalare för bättre textplacering */
+  max-width: 750px;
   padding-left: 2rem;
-  color: #555; /* Lite ljusare textfärg för läsbarhet */
+  color: #555;
 }
 
 .about-text-block p {
-  font-size: 1.1rem; /* Lite större text för bättre läsbarhet */
+  font-size: 1.1rem;
   line-height: 1.6;
   margin: 12px;
 }
@@ -146,7 +203,7 @@ nav img:hover {
   flex-direction: row;
   justify-content: center;
   gap: 1.5rem;
-  padding-top: 2em; /* Lite mer utrymme mellan texten och länkarna */
+  padding-top: 2em;
 }
 
 .social-link {
@@ -171,21 +228,24 @@ nav img:hover {
   align-items: center;
   padding: 2rem 0;
   background-color: var(--secondary-color);
-  border-radius: 50px;
-  margin-top: 50xp;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 .skills img {
-  display: block; /* Remove default inline-block */
+  display: block;
   width: 100px;
   height: 100px;
   margin: 1rem;
-
   transition: all 0.3s;
 }
+
 .skills img:hover {
   transform: scale(1.1);
   transition: all 0.3s;
 }
+
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -202,10 +262,12 @@ nav img:hover {
   align-items: center;
   padding: 2rem 0;
   background-color: var(--secondary-color);
-  margin-top: 40px;
-  border-radius: 50px;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -214,6 +276,7 @@ nav img:hover {
   padding: 0;
   list-style: none;
 }
+
 .project-box {
   display: flex;
   flex-direction: column;
@@ -224,11 +287,13 @@ nav img:hover {
   border-radius: 8px;
   background-color: white;
 }
+
 .project-info {
   text-align: center;
 }
+
 .portfolio h3 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 /* Referens Section */
@@ -238,18 +303,13 @@ nav img:hover {
   align-items: center;
   padding: 2rem 0;
 }
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem 0;
-}
 
 /* Button Styling */
 .button-project {
   color: #090909;
   margin-top: 1em;
   padding: 0.7em 1.7em;
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   border-radius: 0.5em;
   background: #e8e8e8;
   cursor: pointer;
@@ -267,12 +327,11 @@ footer {
 /* Weather Section */
 .weather {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
+  justify-content: center;
+  background-color: var(--secondary-color);
   border-radius: 20px;
   width: 200px;
-  margin-top: 10px;
+  margin: 20px auto;
 }
 
 /* Contact Form Styling */
@@ -282,9 +341,10 @@ footer {
   align-items: center;
   padding: 50px 0;
   margin: 30px auto;
-  width: 70%;
   background-color: var(--secondary-color);
-  border-radius: 20px;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .contact {
@@ -296,8 +356,9 @@ footer {
 .contact-container h2 {
   font-size: 2rem;
   color: var(--text-dark);
-  margin-bottom: px;
+  margin-bottom: 20px;
 }
+
 .contact-container p {
   color: var(--text-dark);
   margin-bottom: 20px;
@@ -311,6 +372,7 @@ footer {
   max-width: 800px;
   margin: 0 auto;
 }
+
 .form-group-column {
   display: flex;
   flex-direction: column;
@@ -373,20 +435,65 @@ footer {
   color: var(--text-dark);
 }
 
+/* Footer */
+.footer-content {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding-bottom: 6rem;
+  padding-top: 2rem;
+}
+
+.footer-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--hover-color);
+}
+
+.social-media {
+  margin-top: 1rem;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.social-media a img {
+  width: 30px;
+  height: 30px;
+}
+
+.social-media a:hover {
+  transform: scale(1.2);
+}
+
+.footer-legal a:hover {
+  color: var(--hover-color);
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
   nav {
     flex-wrap: wrap;
     justify-content: center;
   }
+
   nav ul li a {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .project-box {
     flex: 1 1 calc(70% - 20px);
     max-width: calc(70% - 20px);
   }
+
   .contact-container {
     width: 95%;
     padding: 30px 15px;
@@ -401,11 +508,15 @@ footer {
     flex: 1 1 100%;
   }
 }
+
 @media (max-width: 1100px) {
   .about {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .header-divider svg {
+    height: 80px;
   }
 }
 
@@ -414,10 +525,12 @@ footer {
   .weather {
     width: 100%;
   }
+
   .container {
     width: 95%;
     margin: 0 auto;
   }
+
   nav {
     position: fixed;
     bottom: 0;
@@ -425,36 +538,47 @@ footer {
     padding: 20px;
     border-radius: 50px;
     top: auto;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.219);
   }
+
   nav ul li a {
-    font-size: 12px;
+    font-size: 0.75rem; /* 12px */
   }
-  .header {
-    text-align: center;
-    height: 55vh;
-  }
-  .header h1 {
+
+  .hero-content h1 {
     font-size: 2rem;
+    margin-bottom: 1rem;
   }
+
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
   .about {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .about-image {
     padding: 1rem;
   }
+
   .about-text-block {
     padding: 1rem;
   }
+
   .about h2 {
     font-size: 1.5rem;
     align-items: center;
   }
+
   .project-box {
     flex: 1 1 calc(50% - 20px);
     max-width: calc(50% - 20px);
   }
+
   .contact-container {
     width: 100%;
     padding: 20px 10px;
