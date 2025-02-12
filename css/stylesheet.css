@@ -75,7 +75,7 @@ p {
   display: flex;
   justify-content: flex-end;
   padding: 0.5rem;
-  font-size: 1.7rem;
+  /* font-size: 1.7rem; */
   overflow: hidden;
   background: none;
   margin: 0;
@@ -85,9 +85,11 @@ p {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   color: var(--text-color);
   transition: color 0.3s;
+  background-color: var(--h1-color);
+  border-radius: 50px;
 }
 
 .dark-light-mode button:hover {
