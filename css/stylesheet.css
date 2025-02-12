@@ -359,22 +359,25 @@ nav img:hover {
 
 /* Button Styling */
 .button-project {
-  color: #090909;
-  margin-top: 1em;
-  padding: 0.7em 1.7em;
-  font-size: 1.125rem; /* 18px */
-  border-radius: 0.5em;
-  background: #e8e8e8;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: var(--secondary-color);
+  background-color: var(--primary-color-darker);
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
   cursor: pointer;
-  border: 1px solid #e8e8e8;
-  transition: all 0.3s;
-  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
-  margin: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 0.5rem;
+}
+
+.button-project:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05);
 }
 
 .button-project:active {
-  color: #666;
-  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  background-color: var(--primary-color-dark);
 }
 
 /* Weather Section */
