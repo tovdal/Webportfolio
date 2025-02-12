@@ -6,7 +6,7 @@
 }
 
 :root {
-  --primary-color: #ffe4e1; /* Light Pastel Pink */
+  --primary-color: #e0bab5; /* Light Pastel Pink */
   --secondary-color: #fff5f5; /* Very Light Pink */
   --text-color: #1d3557; /* Dark Blue */
   --hover-color: #ffb6c1; /* Light Pink */
@@ -29,11 +29,11 @@ body {
 
 body {
   font-family: "Quicksand", serif;
-  background-color: #f7bebe;
-  background-image: url("../Images/star-ocacity-50.svg");
+  background-color: #f1dada;
+  /* background-image: url("../Images/star-ocacity-50.svg");
   background-size: 350px 171px;
   background-repeat: repeat;
-  background-blend-mode: multiply;
+  background-blend-mode: multiply; */
 }
 
 header h1 {
@@ -57,10 +57,11 @@ nav {
   align-items: center;
   padding: 18px 8%;
   background-color: var(--primary-color);
-  border-radius: 20px;
+  border-radius: 10px;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  margin-bottom: 5px;
 }
 nav ul {
   list-style: none;
@@ -243,7 +244,7 @@ footer {
   background-color: white;
   border-radius: 20px;
   width: 200px;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 /* Contact Form Styling */
