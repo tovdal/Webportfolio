@@ -7,7 +7,7 @@
 
 :root {
   --primary-color: #ffd0ca;
-  --secondary-color: #fcf4f4;
+  --secondary-color: #fdf8f8;
   --background-color: #f5eaea;
   --text-color: #292e35;
   --hover-color: #ffb6c1;
@@ -28,7 +28,7 @@
   --text-color: #f5f5f5;
   --hover-color: #ff9999;
   --primary-color-dark: #4a4a4a;
-  --primary-color-darker: #b85d68;
+  --primary-color-darker: #cf5c69;
   --sage: #6aa86a;
 
   --h1-color: #ff9999;
@@ -221,9 +221,11 @@ nav img:hover {
 }
 
 .about h2 {
+  display: flex;
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: var(--h2-color);
+  justify-content: center;
 }
 
 .about-image {
