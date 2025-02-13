@@ -241,7 +241,7 @@ nav img:hover {
 }
 
 .about-text-block {
-  flex: 2;
+  flex: 1;
   max-width: 750px;
   padding-left: 2rem;
 }
@@ -541,6 +541,24 @@ nav img:hover {
 }
 
 /* Media Queries for Responsiveness */
+@media (min-width: 1920px) {
+  .about-text-block p {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 3840px) {
+  .about-text-block p {
+    font-size: 2rem;
+  }
+  .about-image img {
+    flex: 2;
+  }
+  .about-text-block {
+    flex: 1;
+  }
+}
+
 @media (max-width: 1200px) {
   nav {
     flex-wrap: wrap;
