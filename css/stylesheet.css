@@ -241,7 +241,7 @@ nav img:hover {
 }
 
 .about-text-block {
-  flex: 1;
+  flex: 2;
   max-width: 750px;
   padding-left: 2rem;
 }
@@ -540,22 +540,30 @@ nav img:hover {
   color: var(--hover-color);
 }
 
-/* Media Queries for Responsiveness */
 @media (min-width: 1920px) {
+  .about-image {
+    flex: 0.5;
+  }
+
+  .about-text-block {
+    flex: 1;
+    padding-left: 2rem;
+  }
   .about-text-block p {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 }
 
 @media (min-width: 3840px) {
-  .about-text-block p {
-    font-size: 2rem;
+  .about-image {
+    flex: 0.6;
   }
-  .about-image img {
-    flex: 2;
-  }
+
   .about-text-block {
     flex: 1;
+  }
+  .about-text-block p {
+    font-size: 2rem;
   }
 }
 
