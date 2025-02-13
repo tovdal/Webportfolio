@@ -143,8 +143,8 @@ nav img:hover {
 .hero {
   background: var(--primary-color);
   color: var(--text-color);
-  padding-bottom: 2rem;
-  padding: 3rem 2rem;
+  padding-bottom: 1rem;
+  padding: 7rem 2rem;
   text-align: center;
 }
 
