@@ -140,49 +140,210 @@ nav img:hover {
 }
 
 /* Header Styling */
+/* Updated Hero Section Styles */
 .hero {
-  background: var(--primary-color);
+  position: relative;
+  background: linear-gradient(
+    45deg,
+    var(--primary-color-dark),
+    var(--primary-color)
+  );
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 2rem;
   color: var(--text-color);
-  padding-bottom: 1rem;
-  padding: 7rem 2rem;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(
+    circle,
+    var(--primary-color-darker) 0%,
+    transparent 70%
+  );
+  animation: gradient-move 20s linear infinite;
+  opacity: 0.1;
+}
+
+@keyframes gradient-move {
+  0% {
+    transform: translate(-25%, -25%);
+  }
+  50% {
+    transform: translate(25%, 25%);
+  }
+  100% {
+    transform: translate(-25%, -25%);
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
   text-align: center;
 }
 
 .hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: var(--h1-color);
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: text-appear 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
 }
 
 .hero-content p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  color: var(--p-color);
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: text-appear 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) 0.2s forwards;
+}
+
+@keyframes text-appear {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .cta-buttons {
   display: flex;
+  gap: 2rem;
   justify-content: center;
-  gap: 1rem;
 }
 
 .cta-btn {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  color: var(--secondary-color);
-  background-color: var(--primary-color-darker);
-  border: none;
-  border-radius: 20px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  border: 2px solid var(--primary-color-darker);
+  background: linear-gradient(
+    45deg,
+    var(--primary-color-darker),
+    var(--primary-color-dark)
+  );
+  color: white;
+}
+
+.cta-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .cta-btn:hover {
-  background-color: var(--hover-color);
-  transform: scale(1.05);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* Divider header*/
+.cta-btn:hover::before {
+  left: 100%;
+}
+
+.floating-element {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: float 15s infinite linear;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(10vw, 10vh) rotate(90deg);
+  }
+  50% {
+    transform: translate(-10vw, 20vh) rotate(180deg);
+  }
+  75% {
+    transform: translate(5vw, -10vh) rotate(270deg);
+  }
+}
+
+.hero div:nth-child(1) {
+  width: 120px;
+  height: 120px;
+  top: 20%;
+  left: 10%;
+  animation-duration: 18s;
+}
+.hero div:nth-child(2) {
+  top: 60%;
+  right: 15%;
+  animation-duration: 15s;
+}
+.hero div:nth-child(3) {
+  bottom: 20%;
+  left: 30%;
+  animation-duration: 20s;
+}
+
+.dynamic-text {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.dynamic-text::after {
+  content: "|";
+  position: absolute;
+  right: -10px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.dividers {
+  margin-top: -100px;
+}
+
+.hero-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.hero-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 98px;
+  transform: rotateY(180deg);
+}
+
 .header-divider {
   left: 0;
   width: 100%;
@@ -199,7 +360,7 @@ nav img:hover {
 }
 
 .shape-fill {
-  fill: var(--primary-color);
+  fill: var(--primary-color-dark);
 }
 
 /* Container */
