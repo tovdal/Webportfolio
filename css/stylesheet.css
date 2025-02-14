@@ -520,6 +520,27 @@ nav img:hover {
   flex-direction: column;
   align-items: center;
   padding: 2rem 0;
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  margin-bottom: 100px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.referens h2 {
+  font-size: 2rem;
+  color: var(--h2-color);
+  margin-bottom: 1.5rem;
+}
+
+.referens p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.referens i {
+  font-style: italic;
 }
 
 /* Button Styling */
