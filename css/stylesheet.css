@@ -235,6 +235,7 @@ nav img:hover {
     var(--primary-color-dark)
   );
   color: white;
+  text-decoration: none;
 }
 
 .cta-btn::before {
