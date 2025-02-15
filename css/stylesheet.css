@@ -7,32 +7,32 @@
 
 :root {
   --primary-color: #ffd0ca;
-  --secondary-color: #fdf8f8;
-  --background-color: #f5eaea;
+  --secondary-color: #fff5f3;
+  --background-color: #f5e0dd;
   --text-color: #292e35;
-  --hover-color: #ffb6c1;
-  --font-family: "Quicksand", serif;
-  --primary-color-dark: #ff9aa4;
-  --primary-color-darker: #ff7f8e;
-  --sage: #8abf8a;
+  --hover-color: #ff9aa4;
+  --font-family: "Quicksand", sans-serif;
+  --primary-color-dark: #ff7f8e;
+  --primary-color-darker: #ff6b7b;
+  --sage: #7cb07c;
 
-  --h1-color: #ffffff;
+  --h1-color: #2a2a2a;
   --h2-color: #161616;
   --p-color: #292e35;
 }
 
 .dark-mode {
   --primary-color: #3a3a3a;
-  --secondary-color: #2a2a2a;
-  --background-color: #1e1e1e;
+  --secondary-color: #333333;
+  --background-color: #1a1a1a;
   --text-color: #f5f5f5;
-  --hover-color: #ff9999;
+  --hover-color: #ff7f8e;
   --primary-color-dark: #4a4a4a;
   --primary-color-darker: #cf5c69;
-  --sage: #6aa86a;
+  --sage: #80cc80;
 
   --h1-color: #ff9999;
-  --h2-color: #88c98a;
+  --h2-color: #9ad89c;
   --p-color: #f5f5f5;
 }
 
@@ -40,7 +40,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  width: 100%; /* Ensure the body does not exceed the viewport width */
+  width: 100%;
   font-family: var(--font-family);
   background-color: var(--background-color);
   color: var(--text-color);
@@ -80,7 +80,6 @@ section {
   display: flex;
   justify-content: flex-end;
   padding: 0.5rem;
-  /* font-size: 1.7rem; */
   overflow: hidden;
   background: none;
   margin: 0;
@@ -91,7 +90,6 @@ section {
   background: none;
   border: none;
   cursor: pointer;
-  /* font-size: 1.5rem; */
   color: var(--text-color);
   transition: color 0.3s;
   background-color: var(--h1-color);
@@ -459,6 +457,7 @@ nav img:hover {
   justify-content: center;
   gap: 3rem;
   flex-wrap: wrap;
+  margin-bottom: 2.5rem;
 }
 
 .skills-category {
@@ -673,8 +672,11 @@ nav img:hover {
 #thank-you-message {
   display: none;
   margin-top: 20px;
-  font-size: 2rem;
   color: var(--text-dark);
+}
+
+#thank-you-message p {
+  font-size: 1.25rem;
 }
 
 /* Contact Info Styling */
@@ -837,7 +839,7 @@ nav img:hover {
   }
 }
 
-/* Small screens, mobile devices (max-width: 600px) */
+/* Small screens, mobile devices */
 @media (max-width: 768px) {
   .weather {
     width: 100%;
@@ -871,6 +873,10 @@ nav img:hover {
   .hero-content p {
     font-size: 1rem;
     margin-bottom: 2rem;
+  }
+
+  .cta-btn {
+    font-size: 0.825rem;
   }
 
   .about {
