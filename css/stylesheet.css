@@ -442,9 +442,7 @@ nav img:hover {
 
 /* Skills Section */
 .skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   padding: 2rem 0;
   background-color: var(--secondary-color);
   border-radius: 20px;
@@ -452,17 +450,17 @@ nav img:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.skills img {
-  display: block;
-  width: 100px;
-  height: 100px;
-  margin: 1rem;
-  transition: all 0.3s;
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
-.skills img:hover {
-  transform: scale(1.1);
-  transition: all 0.3s;
+.skills-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skills-list {
@@ -472,6 +470,21 @@ nav img:hover {
   gap: 2rem;
   padding: 0;
   list-style: none;
+}
+
+.skills-list li {
+  display: flex;
+}
+
+.skills img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  transition: all 0.3s;
+}
+
+.skills img:hover {
+  transform: scale(1.1);
 }
 
 /* Portfolio Section */
@@ -491,7 +504,7 @@ nav img:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4rem;
+  gap: 5rem;
   padding: 0;
   list-style: none;
 }
@@ -513,6 +526,12 @@ nav img:hover {
 
 .portfolio h3 {
   font-size: 2rem;
+}
+
+.portfolio h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 /* Referens Section */
@@ -734,21 +753,25 @@ nav img:hover {
     flex: 1;
     padding-left: 2rem;
   }
-  .about-text-block p {
-    font-size: 1.5rem;
+}
+@media (min-width: 2560px) {
+  .container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  p {
+    font-size: 1.5rem !important;
   }
 }
-
+/* 4k screens */
 @media (min-width: 3840px) {
   .about-image {
     flex: 0.6;
+    scale: 0.8;
   }
 
   .about-text-block {
     flex: 1;
-  }
-  .about-text-block p {
-    font-size: 2rem;
   }
 }
 
