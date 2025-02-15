@@ -1,3 +1,4 @@
+/* Weather API */
 function fetchWeatherData() {
   const apiUrl = "https://api.openweathermap.org/data/2.5/weather";
   const apiKey = "b4fdaca728b3f7626d89149777dc9c67";
@@ -42,6 +43,8 @@ function fetchWeatherData() {
 
 window.addEventListener("load", fetchWeatherData);
 
+/* Form submission */
+
 document
   .getElementById("contact-form")
   .addEventListener("submit", function (event) {
@@ -76,6 +79,7 @@ document
       });
   });
 
+/* Dark mode toggle */
 // Get references to the toggle button and body element
 const themeToggle = document.getElementById("theme-toggle");
 const body = document.body;
