@@ -898,14 +898,22 @@ nav img:hover {
     align-items: center;
   }
 
+  .skills-list {
+    gap: 1rem;
+  }
+
   .project-box {
     flex: 1 1 calc(50% - 20px);
     max-width: calc(50% - 20px);
   }
 
+  .referens {
+    padding: 1rem;
+  }
+
   .contact-container {
     width: 100%;
-    padding: 20px 10px;
+    padding: 1rem 1rem;
   }
 
   .form-group {
