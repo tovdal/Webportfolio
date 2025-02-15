@@ -79,6 +79,7 @@ p {
   overflow: hidden;
   background: none;
   margin: 0;
+  scale: 1.2;
 }
 
 .dark-light-mode button {
@@ -90,10 +91,6 @@ p {
   transition: color 0.3s;
   background-color: var(--h1-color);
   border-radius: 50px;
-}
-
-.dark-light-mode button:hover {
-  color: var(--hover-color);
 }
 
 /* Navigation Styling */
@@ -214,6 +211,7 @@ nav img:hover {
   }
 }
 
+/* buttons */
 .cta-buttons {
   display: flex;
   gap: 2rem;
@@ -236,6 +234,7 @@ nav img:hover {
   );
   color: white;
   text-decoration: none;
+  margin-top: 1em;
 }
 
 .cta-btn::before {
@@ -257,6 +256,7 @@ nav img:hover {
 .cta-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .cta-btn:hover::before {
@@ -563,29 +563,6 @@ nav img:hover {
   font-style: italic;
 }
 
-/* Button Styling */
-.button-project {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  color: var(--secondary-color);
-  background-color: var(--primary-color-darker);
-  border: none;
-  border-radius: 20px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  margin: 0.5rem;
-}
-
-.button-project:hover {
-  background-color: var(--hover-color);
-  transform: scale(1.05);
-}
-
-.button-project:active {
-  background-color: var(--primary-color-dark);
-}
-
 /* Weather Section */
 .weather {
   display: flex;
@@ -697,6 +674,47 @@ nav img:hover {
   color: var(--text-dark);
 }
 
+/* Contact Info Styling */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  margin-bottom: 100px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  color: var(--h2-color);
+  margin-bottom: 1.5rem;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.contact-info li {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin: 0.5rem 0;
+}
+
+.contact-info a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: var(--hover-color);
+}
+
 /* Footer */
 .footer-content {
   text-align: center;
@@ -760,7 +778,7 @@ nav img:hover {
     margin: 0 auto;
   }
   p {
-    font-size: 1.5rem !important;
+    font-size: 1.25rem !important;
   }
 }
 /* 4k screens */

@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/resetsheet.css" />
     <link rel="stylesheet" href="css/stylesheet.css" />
-    <link href="./src/output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/90a9f7545d.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Tova Webportfolio</title>
   </head>
   <body id="index">
@@ -183,8 +186,9 @@
                     Byggd med EF Core och en databas, använder Spectre.Console
                     för terminalgränssnitt.
                   </p>
+
                   <button
-                    class="button-project"
+                    class="cta-btn"
                     onclick="location.href='https://github.com/tovdal/HotelBooking';"
                   >
                     Github
@@ -202,13 +206,13 @@
                     och CSS.
                   </p>
                   <button
-                    class="button-project"
+                    class="cta-btn"
                     onclick="location.href='https://github.com/tovdal/Zoo';"
                   >
                     Github
                   </button>
                   <button
-                    class="button-project"
+                    class="cta-btn"
                     onclick="location.href='https://tovdal.github.io/Zoo/';"
                   >
                     Live Demo
@@ -226,7 +230,7 @@
                   <h3>Cash Register</h3>
                   <p>Mitt första projekt i C#, visual studio och github.</p>
                   <button
-                    class="button-project"
+                    class="cta-btn"
                     onclick="location.href='https://github.com/tovdal/Kassasystemet';"
                   >
                     Github
@@ -325,16 +329,32 @@
                   required
                 ></textarea>
               </div>
-              <button class="btn-primary rounded-0" type="submit">
-                Send Message
-              </button>
+              <button class="cta-btn" type="submit">Send Message</button>
             </form>
             <div id="thank-you-message" style="display: none">
-              <p>Thank you for your message! I will get back to you soon.</p>
+              <p>
+                Tack för ditt meddelande! Jag kommer kontakta dig så snart jag
+                kan.
+              </p>
             </div>
           </section>
         </div>
         <!-- Contact end-->
+
+        <!--Contact information starts-->
+        <section class="contact-info">
+          <h2>Contact Information</h2>
+          <ul>
+            <li>
+              <i class="fa-solid fa-envelope"></i> :
+              <a href="mailto:tova.dalin@hotmail.com">tova.dalin@hotmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i> :
+              <a href="tel:+46702390820">+46 70 239 08 20</a>
+            </li>
+          </ul>
+        </section>
       </main>
       <!-- Main end-->
     </div>
