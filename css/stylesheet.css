@@ -66,6 +66,11 @@ p {
   margin: 12px 0;
 }
 
+section {
+  scroll-margin-top: 125px;
+  /* To solve the links to have a offset when clicking on them */
+}
+
 /* Dark Mode Button Styling */
 .dark-light-mode {
   position: fixed;
@@ -137,7 +142,6 @@ nav img:hover {
 }
 
 /* Header Styling */
-/* Updated Hero Section Styles */
 .hero {
   position: relative;
   background: linear-gradient(
@@ -578,7 +582,7 @@ nav img:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
+  padding: 30px 0;
   margin: 30px auto;
   background-color: var(--secondary-color);
   border-radius: 25px;
@@ -589,7 +593,6 @@ nav img:hover {
 .contact {
   width: 100%;
   text-align: center;
-  padding: 20px;
 }
 
 .contact-container h2 {
