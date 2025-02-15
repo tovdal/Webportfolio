@@ -63,19 +63,20 @@ document
       .then(function (response) {
         if (response.ok) {
           form.reset(); // Reset the form
+          document.getElementById("contact-form").style.display = "none"; // Hide the form
           document.getElementById("thank-you-message").style.display = "block"; // Show the thank you message
         } else {
           response.json().then(function (data) {
             if (Object.hasOwn(data, "errors")) {
               alert(data["errors"].map((error) => error["message"]).join(", "));
             } else {
-              alert("Oops! There was a problem submitting your form");
+              alert("Oops! Det var ett problem att skicka formuläret");
             }
           });
         }
       })
       .catch(function (error) {
-        alert("Oops! There was a problem submitting your form");
+        alert("Oops! Det var ett problem att skicka formuläret");
       });
   });
 
