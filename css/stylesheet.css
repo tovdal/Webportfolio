@@ -529,6 +529,7 @@ nav img:hover {
 
 .project-info {
   text-align: center;
+  padding: 2rem 1rem;
 }
 
 .portfolio h3 {
@@ -539,6 +540,9 @@ nav img:hover {
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
+}
+.portfolio button {
+  margin: 1rem;
 }
 
 /* Referens Section */
