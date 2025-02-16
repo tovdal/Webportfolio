@@ -67,7 +67,7 @@ p {
 }
 
 section {
-  scroll-margin-top: 125px;
+  scroll-margin-top: 150px;
   /* To solve the links to have a offset when clicking on them */
 }
 
@@ -147,7 +147,7 @@ nav img:hover {
     var(--primary-color-dark),
     var(--primary-color)
   );
-  min-height: 75vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -463,6 +463,11 @@ nav img:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--primary-color);
+  padding: 2rem 4rem;
+  padding-bottom: 3rem;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .skills-list {
@@ -519,7 +524,7 @@ nav img:hover {
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .project-info {
@@ -777,8 +782,7 @@ nav img:hover {
 }
 @media (min-width: 2560px) {
   .container {
-    width: 70%;
-    margin: 0 auto;
+    width: 80%;
   }
   p {
     font-size: 1.25rem !important;
