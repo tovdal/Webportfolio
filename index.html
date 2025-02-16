@@ -92,274 +92,265 @@
         </svg>
       </div>
     </div>
-
     <!-- Header end-->
 
-    <!-- Container start-->
-    <div class="container">
-      <!-- Main start-->
-      <main>
-        <div class="weather">
-          <p id="weatherInfo">—</p>
+    <!-- Main start-->
+    <main>
+      <div class="weather">
+        <p id="weatherInfo">—</p>
+      </div>
+      <!-- About me start-->
+      <section id="about" class="about container">
+        <!-- Image of me -->
+        <div class="about-image">
+          <img
+            src="Images/myself.png"
+            alt="image of Tova Dalin"
+            class="about-img"
+          />
         </div>
-        <!-- About me start-->
-        <section id="about" class="about">
-          <!-- Image of me -->
-          <div class="about-image">
-            <img
-              src="Images/myself.png"
-              alt="image of Tova Dalin"
-              class="about-img"
-            />
+
+        <div class="about-text-block">
+          <h2>Om mig</h2>
+          <p>
+            Mitt namn är Tova Dalin och jag studerar Systemutvecklare .NET med
+            AI-kompetens på Edugrade. Jag har alltid haft ett stort intresse för
+            teknik och programmering, vilket ledde mig till att börja min
+            utbildning inom systemutveckling.
+          </p>
+          <p>
+            Jag är passionerad om att lösa problem och alltid strävar efter att
+            skriva ren och effektiv kod. Jag ser fram emot att fortsätta växa
+            inom teknikutveckling och arbeta med spännande projekt i framtiden.
+          </p>
+          <p>
+            På fritiden gillar jag att spela spel, lösa kodutmaningar och hålla
+            mig uppdaterad om de senaste tekniska trenderna.
+          </p>
+
+          <p>Connect with me!</p>
+          <div class="cta-buttons">
+            <a href="#contact" class="cta-btn">Kontakta mig!</a>
+            <a href="/cv/CV_OLD.pdf" download class="cta-btn">Ladda ner CV</a>
           </div>
+        </div>
+      </section>
+      <!-- About me end-->
 
-          <div class="about-text-block">
-            <h2>Om mig</h2>
-            <p>
-              Mitt namn är Tova Dalin och jag studerar Systemutvecklare .NET med
-              AI-kompetens på Edugrade. Jag har alltid haft ett stort intresse
-              för teknik och programmering, vilket ledde mig till att börja min
-              utbildning inom systemutveckling.
-            </p>
-            <p>
-              Jag är passionerad om att lösa problem och alltid strävar efter
-              att skriva ren och effektiv kod. Jag ser fram emot att fortsätta
-              växa inom teknikutveckling och arbeta med spännande projekt i
-              framtiden.
-            </p>
-            <p>
-              På fritiden gillar jag att spela spel, lösa kodutmaningar och
-              hålla mig uppdaterad om de senaste tekniska trenderna.
-            </p>
-
-            <p>Connect with me!</p>
-            <div class="cta-buttons">
-              <a href="#contact" class="cta-btn">Kontakta mig!</a>
-              <a href="/cv/CV_OLD.pdf" download class="cta-btn">Ladda ner CV</a>
-            </div>
+      <!-- Skills start-->
+      <section id="skills" class="skills">
+        <h2>Kunskaper</h2>
+        <div class="skills-container">
+          <div class="skills-category">
+            <p>Back-end</p>
+            <ul class="skills-list">
+              <li><img src="Images/icons/CSharp.svg" alt="C# icon" /></li>
+              <li><img src="Images/icons/SQL.svg" alt="SQL icon" /></li>
+            </ul>
           </div>
-        </section>
-        <!-- About me end-->
-
-        <!-- Skills start-->
-        <section id="skills" class="skills">
-          <h2>Kunskaper</h2>
-          <div class="skills-container">
-            <div class="skills-category">
-              <p>Back-end</p>
-              <ul class="skills-list">
-                <li><img src="Images/icons/CSharp.svg" alt="C# icon" /></li>
-                <li><img src="Images/icons/SQL.svg" alt="SQL icon" /></li>
-              </ul>
-            </div>
-            <div class="skills-category">
-              <p>Front-end</p>
-              <ul class="skills-list">
-                <li><img src="Images/icons/HTML5.svg" alt="HTML5 icon" /></li>
-                <li><img src="Images/icons/CSS3.svg" alt="CSS3 icon" /></li>
-                <li>
-                  <img
-                    src="Images/icons/JavaScript.svg"
-                    alt="JavaScript icon"
-                  />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <!-- Skills end-->
-
-        <!-- Portfolio start-->
-        <div class="portfolio-container">
-          <section id="portfolio" class="portfolio">
-            <h2>Portfolio</h2>
-            <ul class="project-list">
-              <li class="project-box">
-                <div class="portfolio-image">
-                  <img
-                    src="Images/HotelBooking.png"
-                    alt="Image of the hotel booking app"
-                  />
-                </div>
-                <div class="project-info">
-                  <h3>Hotel booking</h3>
-                  <p>
-                    Byggd med EF Core och en databas, använder Spectre.Console
-                    för terminalgränssnitt.
-                  </p>
-
-                  <button
-                    class="cta-btn"
-                    onclick="location.href='https://github.com/tovdal/HotelBooking';"
-                  >
-                    Github
-                  </button>
-                </div>
-              </li>
-              <li class="project-box">
-                <div class="portfolio-image">
-                  <img src="Images/Zoo.png" alt="Image of the Zoo webpage" />
-                </div>
-                <div class="project-info">
-                  <h3>Zoo webpage</h3>
-                  <p>
-                    Min första websida som jag har gjort. det användes bara HTML
-                    och CSS.
-                  </p>
-                  <button
-                    class="cta-btn"
-                    onclick="location.href='https://github.com/tovdal/Zoo';"
-                  >
-                    Github
-                  </button>
-                  <button
-                    class="cta-btn"
-                    onclick="window.open('https://tovdal.github.io/Zoo/', '_blank');"
-                    ;
-                  >
-                    Live Demo
-                  </button>
-                </div>
-              </li>
-              <li class="project-box">
-                <div class="portfolio-image">
-                  <img
-                    src="Images/cachregister.png"
-                    alt="Image of the cash register app"
-                  />
-                </div>
-                <div class="project-info">
-                  <h3>Cash Register</h3>
-                  <p>Mitt första projekt i C#, visual studio och github.</p>
-                  <button
-                    class="cta-btn"
-                    onclick="location.href='https://github.com/tovdal/Kassasystemet';"
-                  >
-                    Github
-                  </button>
-                </div>
+          <div class="skills-category">
+            <p>Front-end</p>
+            <ul class="skills-list">
+              <li><img src="Images/icons/HTML5.svg" alt="HTML5 icon" /></li>
+              <li><img src="Images/icons/CSS3.svg" alt="CSS3 icon" /></li>
+              <li>
+                <img src="Images/icons/JavaScript.svg" alt="JavaScript icon" />
               </li>
             </ul>
-          </section>
-        </div>
-        <!-- Portfolio end-->
-
-        <!-- Referens start -->
-        <section id="referens" class="referens">
-          <h2>Referens</h2>
-          <div>
-            <p>
-              <i
-                >"En empatisk och lyhörd medarbetare som alltid sätter kundens
-                behov i fokus."</i
-              >
-              H.M
-            </p>
-            <p>
-              <i
-                >"En punktlig och glad medarbetare som alltid levererar bra
-                kundservice."</i
-              >
-              I.L
-            </p>
           </div>
-        </section>
-        <!-- Referens end -->
-
-        <!-- Contact start-->
-        <div class="contact-container">
-          <section id="contact" class="contact">
-            <h2>Kontakta mig</h2>
-            <form
-              id="contact-form"
-              action="https://formspree.io/f/xgvozdbl"
-              method="post"
-            >
-              <div class="form-group">
-                <div class="form-group-column">
-                  <label for="Name">Förnamn:</label>
-                  <input
-                    type="text"
-                    id="Name"
-                    name="name"
-                    autocomplete="given-name"
-                    required
-                  />
-                </div>
-                <div class="form-group-column">
-                  <label for="Last-Name">Efternamn:</label>
-                  <input
-                    type="text"
-                    id="Last-Name"
-                    name="last-name"
-                    autocomplete="last-name"
-                    required
-                  />
-                </div>
-                <div class="form-group-column">
-                  <label for="email">Email:</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    autocomplete="email"
-                    required
-                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                    title="Please enter a valid email address."
-                  />
-                  <!--https://stackoverflow.com/questions/37936138/html-validation-for-phone-numbers/37936191-->
-                </div>
-                <div class="form-group-column">
-                  <label for="phone">Tel:</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    autocomplete="tel"
-                    required
-                    pattern="^\+?[0-9\s\-]{7,15}$"
-                    title="Please enter a valid phone number (e.g., +123456789)."
-                  />
-                </div>
-                <label for="message">Meddelande:</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="4"
-                  placeholder="Skriv in ditt meddelande här..."
-                  required
-                ></textarea>
-              </div>
-              <button class="cta-btn" type="submit">Skicka!</button>
-            </form>
-            <div id="thank-you-message" style="display: none">
-              <p>
-                Tack för ditt meddelande! Jag kommer kontakta dig så snart jag
-                kan.
-              </p>
-            </div>
-          </section>
         </div>
-        <!-- Contact end-->
+      </section>
+      <!-- Skills end-->
 
-        <!--Contact information starts-->
-        <section class="contact-info">
-          <h2>Kontakt information</h2>
-          <ul>
-            <li>
-              <i class="fa-solid fa-envelope"></i> :
-              <a href="mailto:tova.dalin@hotmail.com">tova.dalin@hotmail.com</a>
+      <!-- Portfolio start-->
+      <div class="portfolio-container container">
+        <section id="portfolio" class="portfolio">
+          <h2>Portfolio</h2>
+          <ul class="project-list">
+            <li class="project-box">
+              <div class="portfolio-image">
+                <img
+                  src="Images/HotelBooking.png"
+                  alt="Image of the hotel booking app"
+                />
+              </div>
+              <div class="project-info">
+                <h3>Hotel booking</h3>
+                <p>
+                  Byggd med EF Core och en databas, använder Spectre.Console för
+                  terminalgränssnitt.
+                </p>
+
+                <button
+                  class="cta-btn"
+                  onclick="window.open('https://github.com/tovdal/HotelBooking', '_blank');"
+                >
+                  Github
+                </button>
+              </div>
             </li>
-            <li>
-              <i class="fa-solid fa-phone"></i> :
-              <a href="tel:+46702390820">+46 70 239 08 20</a>
+            <li class="project-box">
+              <div class="portfolio-image">
+                <img src="Images/Zoo.png" alt="Image of the Zoo webpage" />
+              </div>
+              <div class="project-info">
+                <h3>Zoo webpage</h3>
+                <p>
+                  Min första websida som jag har gjort. det användes bara HTML
+                  och CSS.
+                </p>
+                <button
+                  class="cta-btn"
+                  onclick="window.open('https://github.com/tovdal/Zoo', '_blank');"
+                >
+                  Github
+                </button>
+                <button
+                  class="cta-btn"
+                  onclick="window.open('https://tovdal.github.io/Zoo/', '_blank');"
+                  ;
+                >
+                  Live Demo
+                </button>
+              </div>
+            </li>
+            <li class="project-box">
+              <div class="portfolio-image">
+                <img
+                  src="Images/cachregister.png"
+                  alt="Image of the cash register app"
+                />
+              </div>
+              <div class="project-info">
+                <h3>Cash Register</h3>
+                <p>Mitt första projekt i C#, visual studio och github.</p>
+                <button
+                  class="cta-btn"
+                  onclick="window.open('https://github.com/tovdal/Kassasystemet', '_blank');"
+                >
+                  Github
+                </button>
+              </div>
             </li>
           </ul>
         </section>
-      </main>
-      <!-- Main end-->
-    </div>
-    <!-- Container end -->
+      </div>
+      <!-- Portfolio end-->
+
+      <!-- Referens start -->
+      <section id="referens" class="referens">
+        <h2>Referens</h2>
+        <div>
+          <p>
+            <i
+              >"En empatisk och lyhörd medarbetare som alltid sätter kundens
+              behov i fokus."</i
+            >
+            H.M
+          </p>
+          <p>
+            <i
+              >"En punktlig och glad medarbetare som alltid levererar bra
+              kundservice."</i
+            >
+            I.L
+          </p>
+        </div>
+      </section>
+      <!-- Referens end -->
+
+      <!-- Contact start-->
+      <div class="contact-container container">
+        <section id="contact" class="contact">
+          <h2>Kontakta mig</h2>
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/xgvozdbl"
+            method="post"
+          >
+            <div class="form-group">
+              <div class="form-group-column">
+                <label for="Name">Förnamn:</label>
+                <input
+                  type="text"
+                  id="Name"
+                  name="name"
+                  autocomplete="given-name"
+                  required
+                />
+              </div>
+              <div class="form-group-column">
+                <label for="Last-Name">Efternamn:</label>
+                <input
+                  type="text"
+                  id="Last-Name"
+                  name="last-name"
+                  autocomplete="last-name"
+                  required
+                />
+              </div>
+              <div class="form-group-column">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                  title="Please enter a valid email address."
+                />
+                <!--https://stackoverflow.com/questions/37936138/html-validation-for-phone-numbers/37936191-->
+              </div>
+              <div class="form-group-column">
+                <label for="phone">Tel:</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  autocomplete="tel"
+                  required
+                  pattern="^\+?[0-9\s\-]{7,15}$"
+                  title="Please enter a valid phone number (e.g., +123456789)."
+                />
+              </div>
+              <label for="message">Meddelande:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Skriv in ditt meddelande här..."
+                required
+              ></textarea>
+            </div>
+            <button class="cta-btn" type="submit">Skicka!</button>
+          </form>
+          <div id="thank-you-message" style="display: none">
+            <p>
+              Tack för ditt meddelande! Jag kommer kontakta dig så snart jag
+              kan.
+            </p>
+          </div>
+        </section>
+      </div>
+      <!-- Contact end-->
+
+      <!--Contact information starts-->
+      <section class="contact-info">
+        <h2>Kontakt information</h2>
+        <ul>
+          <li>
+            <i class="fa-solid fa-envelope"></i> :
+            <a href="mailto:tova.dalin@hotmail.com">tova.dalin@hotmail.com</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i> :
+            <a href="tel:+46702390820">+46 70 239 08 20</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- Main end-->
 
     <!-- Footer start-->
     <footer>
