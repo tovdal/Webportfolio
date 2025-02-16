@@ -14,7 +14,7 @@ This is a web portfolio project showcasing various sections such as hero, about,
 
 ## Demo
 
-You can view a live demo of the project [here](#).
+You can view a live demo of the project [here](https://tovdal.github.io/webportfolio). (Not functioning right now. will update in future!)
 
 ## Features
 
@@ -24,13 +24,18 @@ You can view a live demo of the project [here](#).
 - Skills and portfolio sections
 - Contact form with validation
 - Smooth scrolling and transitions
+- Weather information display
+- References section
 
 ## Technologies Used
 
 - HTML
 - CSS
-- JavaScript (if applicable)
+- JavaScript
 - [Quicksand](https://fonts.google.com/specimen/Quicksand) font from Google Fonts
+- [Font Awesome](https://fontawesome.com) for icons
+- [Formspree](https://formspree.io) for form handling
+- [OpenWeatherMap API](https://openweathermap.org/api) for weather information
 
 ## Setup
 
@@ -53,6 +58,7 @@ cd webportfolio
 - Customize the content in the HTML files to match your personal information and projects.
 - Modify the CSS in `stylesheet.css` to change the styles as needed.
 - Add your own images and assets to the `images` directory.
+- Update the JavaScript in `script.js` to add or modify functionality.
 
 ## Contributing
 
