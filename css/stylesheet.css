@@ -8,6 +8,7 @@
 :root {
   --primary-color: #ffd0ca;
   --secondary-color: #fff5f3;
+  --thirdary-color: #fa9999;
   --background-color: #f5e0dd;
   --text-color: #292e35;
   --hover-color: #ff9aa4;
@@ -24,6 +25,7 @@
 .dark-mode {
   --primary-color: #504f4f;
   --secondary-color: #333333;
+  --thirdary-color: #a15a5a;
   --background-color: #1a1a1a;
   --text-color: #f5f5f5;
   --hover-color: #ff7f8e;
@@ -105,7 +107,7 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 18px 8%;
-  background-color: var(--primary-color);
+  background-color: var(--thirdary-color);
   color: var(--text-color);
   width: 100%;
   margin: 0 auto;
@@ -580,7 +582,7 @@ nav img:hover {
 .weather {
   display: flex;
   justify-content: center;
-  background-color: var(--secondary-color);
+  background-color: var(--thirdary-color);
   border-radius: 20px;
   width: 200px;
   margin: 20px auto;
@@ -683,8 +685,8 @@ nav img:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 2rem;
-  margin: 6rem;
+  padding: 4rem 0.1rem;
+  margin: 6rem 0;
   color: var(--text-dark);
 }
 
