@@ -14,7 +14,7 @@ This is a web portfolio project showcasing various sections such as hero, about,
 
 ## Demo
 
-You can view a live demo of the project [here](https://tovdal.github.io/Webportfolio/#portfolio).
+You can view a live demo of the project [here](https://tovdal.github.io/Webportfolio).
 
 ## Features
 
