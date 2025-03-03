@@ -5,70 +5,6 @@
   /*outline: 1px solid red;  /* Visar ramar för alla element */
 }
 
-/* 1. Use a more-intuitive box-sizing model */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-/* 2. Remove default margin */
-* {
-  margin: 0;
-}
-body {
-  /* 3. Add accessible line-height */
-  line-height: 1.5;
-  /* 4. Improve text rendering */
-  -webkit-font-smoothing: antialiased;
-}
-/* 5. Improve media defaults */
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-/* 6. Inherit fonts for form controls */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-/* 7. Avoid text overflows */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-/* 8. Improve line wrapping */
-p {
-  text-wrap: pretty;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: balance;
-}
-/*
-  9. Create a root stacking context
-*/
-#root,
-#__next {
-  isolation: isolate;
-}
-
-/* Taken from https://www.joshwcomeau.com/css/custom-css-reset/ */
-
 :root {
   --primary-color: #ffd0ca;
   --secondary-color: #fff5f3;
@@ -100,6 +36,15 @@ h6 {
   --h1-color: #ff9999;
   --h2-color: #9ad89c;
   --p-color: #f5f5f5;
+}
+
+.contact-container,
+.contact-container h2,
+.contact-container p,
+.form-group label,
+.form-group input,
+.form-group textarea {
+  font-family: var(--font-family);
 }
 
 html,
@@ -594,6 +539,14 @@ nav img:hover {
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: var(--primary-color);
+  overflow: hidden; /* Ensure any overflow content is hidden */
+}
+
+.project-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .project-info {
@@ -612,6 +565,12 @@ nav img:hover {
 }
 .portfolio button {
   margin: 1rem;
+}
+.portfolio-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Referens Section */
