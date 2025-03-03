@@ -81,7 +81,6 @@ document
   });
 
 /* Dark mode toggle */
-// Get references to the toggle button and body element
 const themeToggle = document.getElementById("theme-toggle");
 const body = document.body;
 
